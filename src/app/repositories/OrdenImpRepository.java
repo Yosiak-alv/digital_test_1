@@ -6,7 +6,7 @@ import app.repositories.interfaces.BaseRepository;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class AbstractOrdenRepository<T extends BaseModel<ID>,ID> implements BaseRepository<T, ID> {
+public class OrdenImpRepository<T extends BaseModel<ID>,ID> implements BaseRepository<T, ID> {
 
     List<T> datasource = new ArrayList<>();
 

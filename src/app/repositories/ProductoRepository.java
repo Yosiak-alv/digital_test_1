@@ -1,7 +1,6 @@
-package app.repositories.productsRepositories;
+package app.repositories;
 
 import app.models.Producto;
-import app.repositories.BolsaSupermercadoRepository;
 
 public class ProductoRepository<T extends Producto> extends BolsaSupermercadoRepository<T,Integer> {
 

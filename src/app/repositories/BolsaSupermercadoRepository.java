@@ -6,7 +6,7 @@ import app.repositories.interfaces.BaseRepository;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class BolsaSupermercadoRepository<T extends Producto,ID> implements BaseRepository<T,ID> {
+public class BolsaSupermercadoRepository<T extends Producto,ID> implements BaseRepository<T,ID> {
 
     private static final int MAX_BAG_CAPACITY = 5;
     List<T> datasource = new ArrayList<>(MAX_BAG_CAPACITY);

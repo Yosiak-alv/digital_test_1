@@ -1,7 +1,7 @@
 import app.enums.ColorTipo;
 import app.models.*;
 import app.repositories.OrdenRepository;
-import app.repositories.productsRepositories.*;
+import app.repositories.ProductoRepository;
 import app.repositories.BolsaSupermercadoRepository;
 import app.repositories.interfaces.BaseRepository;
 
@@ -10,10 +10,10 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        BolsaSupermercadoRepository<Fruta,Integer> frutaRepo = new FrutaRepository();
-        BolsaSupermercadoRepository<Lacteo,Integer> lacteoRepo = new LacteoRepository();
-        BolsaSupermercadoRepository<Limpieza,Integer> limpiezaRepo = new LimpiezaRepository();
-        BolsaSupermercadoRepository<NoPerecible,Integer> noPerecibleRepo = new NoPerecibleRepository();
+        BolsaSupermercadoRepository<Fruta,Integer> frutaRepo = new ProductoRepository<>();
+        BolsaSupermercadoRepository<Lacteo,Integer> lacteoRepo = new ProductoRepository<>();
+        BolsaSupermercadoRepository<Limpieza,Integer> limpiezaRepo = new ProductoRepository<>();
+        BolsaSupermercadoRepository<NoPerecible,Integer> noPerecibleRepo = new ProductoRepository<>();
 
         //creando 5 frutas
         frutaRepo.add(new Fruta("Manzana", 1.0,20, ColorTipo.ROJO));
